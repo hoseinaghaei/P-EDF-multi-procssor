@@ -1,10 +1,12 @@
 # P-EDF (Partitioned Earliest Deadline First)
 
-This project is a scheduler algorithm based on P-EDF on a multi-core system. You can change the processor count in main.py file.
+This project is a scheduler algorithm based on P-EDF on a multi-core system. You can change the processor count in the main.py file.
 
-Here is a sample output using 10 tasks with below graph dependencies.
+Here is a sample output using 10 tasks with dependencies as below.
 
 <img src="pics/sample.png">
 <img src="pics/result.png">
 
 ## main idea
+###   We find the longest path in the tree and assign all those tasks in the path to a processor. then remove these tasks and continue with the remaining.
+  
