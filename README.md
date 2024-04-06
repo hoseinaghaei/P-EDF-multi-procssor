@@ -9,4 +9,5 @@ Here is a sample output using 10 tasks with dependencies as below.
 
 ## main idea
 ###   We find the longest path in the tree and assign all those tasks in the path to a processor. then remove these tasks and continue with the remaining.
+###   If there is no idle processor, we assign tasks to the processor with the least execution time. 
   
